@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genuine Spare Parts | Okiru Electronics Uganda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            box-sizing: border-box;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(136, 146, 176, 0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .product-card * {
+            box-sizing: border-box;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .product-info p {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="scrolled">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jfif" alt="Okiru Electronics Logo">
+                OKIRU<span>ELECTRONICS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-dark" style="padding-top: 150px; padding-bottom: 80px;">
+        <div class="container">
+            <h1 style="text-align: center; color: var(--white);">Technology <span
+                    style="color: var(--accent-color);">Simplified</span></h1>
+            <p style="text-align: center; color: #E2E8F0; margin-bottom: 0;">Genuine Products & Expert Solutions for all
+                your technology needs.</p>
+        </div>
+    </section>
+
+    <section style="padding-top: 80px;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;color: var(--primary-color);">Featured <span
+                    style="color: var(--primary-color);">Laptops</span></h2>
+
+            <div class="product-grid" style="margin-bottom: 6rem;">
+                <!-- Laptop 1 -->
+                <div class="product-card">
+                    <div
+                        style="position: absolute; top: 1rem; left: 1rem; background: var(--accent-color); color: var(--secondary-color); padding: 0.2rem 1rem; border-radius: 4px; font-weight: 700; z-index: 10;">
+                    </div>
+                    <img src="assets/lap1.jfif" alt="Hp Elitebook Folio 9480m" class="product-img">
+                    <div class="product-info">
+                        <h3>Hp Elitebook Folio 9480m</h3>
+                        <p>Core i5, 8GB RAM, 500GB. Perfect for professionals on the move.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Hp%20Elitebook%20Folio%209480m"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+
+                <!-- Laptop 2 -->
+                <div class="product-card">
+                    <div
+                        style="position: absolute; top: 1rem; left: 1rem; background: var(--text-muted); color: var(--secondary-color); padding: 0.2rem 1rem; border-radius: 4px; font-weight: 700; z-index: 10;">
+                    </div>
+                    <img src="assets/lap2.jfif" alt="Hp Elitebook 830 g7" class="product-img">
+                    <div class="product-info">
+                        <h3>Hp Elitebook 830 g7</h3>
+                        <p>Core i5, 16GB RAM, 512 SSD. Touchscreen, powerful, and efficient.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Hp%20Elitebook%20830%20g7"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+
+                <!-- Laptop 3 -->
+                <div class="product-card">
+                    <img src="assets/lap3.jfif" alt="Dell Latitude 3120" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 3120</h3>
+                        <p>Celeron, 4 GB RAM, 128 GB SSD. Durable and Good for students.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%203120"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+
+                <!-- Laptop 4 -->
+                <div class="product-card">
+                    <img src="assets/lap4.jfif" alt="Dell Latitude 3340" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 3340</h3>
+                        <p>Core i3, 4 GB RAM, 500 GB HDD. The ultimate business workstation.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%203340"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+
+                <!-- Laptop 5 -->
+                <div class="product-card">
+                    <img src="assets/lap5.jfif" alt="Dell Latitude 3189" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 3189</h3>
+                        <p>Celeron, 4 GB RAM, 128 SSD. Touchscreen 2in1</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%203189"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+
+                <!-- Laptop 6 -->
+                <div class="product-card">
+                    <img src="assets/lap6.jfif" alt="Dell Latitude 7390" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 7390</h3>
+                        <p>Core i5, 8GB RAM, 256 SSD. Touchscreen 2in1 Laptop.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%207390"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/lap7.jfif" alt="Dell Latitude 3120" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 3120</h3>
+                        <p> 4GB RAM, 128 SSD. Good for students.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%203120"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/lap8.jfif" alt="Dell Latitude 7240" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 7240</h3>
+                        <p>Core i5, 8GB RAM, 128 GB SSD.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%207240"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/lap9.jfif" alt="Dell Latitude 7270" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 7270</h3>
+                        <p>Core i5, 8GB RAM, 256GB SSD. Good for Students</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%207270"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/lap10.jfif" alt="HP Elitebook 840 G5" class="product-img">
+                    <div class="product-info">
+                        <h3>HP Elitebook 840 G5</h3>
+                        <p>Core i5, 8GB RAM, 256 SSD. Good for professionals.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20HP%20Elitebook%20840%20G5"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/lap11.jfif" alt="Hp Elitebook 840 G2" class="product-img">
+                    <div class="product-info">
+                        <h3>Hp Elitebook 840 G2</h3>
+                        <p>Core i5, 8GB RAM, 500 GB HDD. Good for students.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Hp%20Elitebook%20840%20G2"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/lap12.jfif" alt="Dell Latitude 7490" class="product-img">
+                    <div class="product-info">
+                        <h3>Dell Latitude 7490</h3>
+                        <p>Core i5, 8GB RAM, 256 SSD. Good for professionals.</p>
+                        <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20the%20Dell%20Latitude%207490"
+                            class="btn btn-primary" style="width: 100%;">Contact for Price</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 6rem;">
+                <h2 style="text-align: center;">Genuine <span style="color: var(--primary-color);">Spare Parts</span>
+                </h2>
+                <p style="text-align: center; color: var(--text-muted);">High-quality, certified spare parts for all
+                    major laptop brands.</p>
+
+                <div class="product-grid" style="margin-top: 3rem;">
+                    <!-- Product: Screen -->
+                    <div class="product-card">
+                        <img src="assets/screen.png" alt="Laptop Screen" class="product-img">
+                        <div class="product-info">
+                            <h3>Laptop Screens</h3>
+                            <p>FHD, 4K, IPS, and Touch screens for Dell, HP, Apple, and more.</p>
+                            <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20a%20laptop%20screen"
+                                class="btn btn-primary" style="width: 100%;">Contact to Order</a>
+                        </div>
+                    </div>
+
+                    <!-- Product: Keyboard -->
+                    <div class="product-card">
+                        <img src="assets/keyboard.png" alt="Laptop Keyboard" class="product-img">
+                        <div class="product-info">
+                            <h3>Keyboards</h3>
+                            <p>Replacement keyboards for all models, including backlit versions.</p>
+                            <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20a%20laptop%20keyboard"
+                                class="btn btn-primary" style="width: 100%;">Contact to Order</a>
+                        </div>
+                    </div>
+
+                    <!-- Product: Battery -->
+                    <div class="product-card">
+                        <img src="assets/battery.png" alt="Laptop Battery" class="product-img">
+                        <div class="product-info">
+                            <h3>Batteries</h3>
+                            <p>Genuine high-capacity batteries with warranty and long life.</p>
+                            <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20a%20laptop%20battery"
+                                class="btn btn-primary" style="width: 100%;">Contact to Order</a>
+                        </div>
+                    </div>
+
+                    <!-- Product: Charger -->
+                    <div class="product-card">
+                        <img src="assets/charger.png" alt="Laptop Charger" class="product-img">
+                        <div class="product-info">
+                            <h3>Chargers/Adapters</h3>
+                            <p>Original power adapters with surge protection for all brands.</p>
+                            <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20a%20laptop%20charger"
+                                class="btn btn-primary" style="width: 100%;">Contact to Order</a>
+                        </div>
+                    </div>
+
+                    <!-- Product: RAM -->
+                    <div class="product-card">
+                        <img src="assets/ram.png" alt="Laptop RAM" class="product-img">
+                        <div class="product-info">
+                            <h3>DDR4 RAM Upgrades</h3>
+                            <p>Boost your laptop speed with 8GB, 16GB, or 32GB high-performance RAM.</p>
+                            <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20a%20RAM%20upgrade"
+                                class="btn btn-primary" style="width: 100%;">Contact to Order</a>
+                        </div>
+                    </div>
+
+                    <!-- Product: SSD -->
+                    <div class="product-card">
+                        <img src="assets/ssd.png" alt="Laptop SSD" class="product-img">
+                        <div class="product-info">
+                            <h3>High-Speed SSDs</h3>
+                            <p>NVMe and SATA SSDs for lightning-fast boot times and data access.</p>
+                            <a href="https://wa.me/256703106843?text=I'm%20interested%20in%20an%20SSD%20upgrade"
+                                class="btn btn-primary" style="width: 100%;">Contact to Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <a href="https://wa.me/256703106843" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                        <img src="assets/logo.jfif" alt="Okiru Electronics Logo">
+                        OKIRU<span>ELECTRONICS</span>
+                    </a>
+                    <p>Technology Simplified. Kampala's leading specialist in laptop repair, accessories, and expert
+                        technical support.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"
+                                style="color: var(--accent-color); margin-right: 0.5rem;"></i> Shop A3 09, Kyato
+                            Complex, Kampala</li>
+                        <li><i class="fa-solid fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            +256 703 106843 / +256 775 241486</li>
+                        <li><i class="fa-solid fa-envelope"
+                                style="color: var(--accent-color); margin-right: 0.5rem;"></i> buzinessatwork@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Okiru Electronics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImg" src="" alt="Product Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+            <a id="modalContactBtn" href="#" class="btn btn-primary" target="_blank">Contact for Price</a>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=2"></script>
+</body>
+
+</html>

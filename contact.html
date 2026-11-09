@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Okiru Electronics Uganda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info-card {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            color: var(--text-main);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-right: 1.5rem;
+            margin-top: 0.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            background: var(--white);
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            color: var(--text-main);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+
+        @media (max-width: 992px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="scrolled">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jfif" alt="Okiru Electronics Logo">
+                OKIRU<span>ELECTRONICS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section
+        style="padding-top: 150px; padding-bottom: 80px; background: var(--bg-dark); color: var(--white); border-bottom: 1px solid var(--glass-border);">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 1rem; color: var(--white);">Get in <span
+                    style="color: var(--accent-color);">Touch</span></h1>
+            <p style="text-align: center; color: #E2E8F0; max-width: 600px; margin: 0 auto;">Have a question or need a
+                quote? Reach out to us today. Our team is ready to assist you with all your laptop needs.</p>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0;">
+        <div class="container">
+
+            <div class="contact-wrapper">
+                <div class="contact-info-card">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot" style="color: var(--primary-color);"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p style="color: var(--text-muted);">Shop A3 09, Kyato Complex<br>Kampala, Uganda</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone" style="color: var(--primary-color);"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p style="color: var(--text-muted);">+256 703 106843<br>+256 775 241486</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp" style="color: var(--primary-color);"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p style="color: var(--text-muted);">+256 703 106843</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope" style="color: var(--primary-color);"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p style="color: var(--text-muted);">buzinessatwork@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+256..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn btn-primary"
+                            style="width: 100%; font-size: 1.1rem; display: flex; align-items: center; justify-content: center;">
+                            <span class="spinner"></span>
+                            <span>Send Message</span>
+                        </button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div
+                style="margin-top: 5rem; width: 100%; height: 450px; background: var(--bg-light); border-radius: 12px; overflow: hidden; border: 1px solid #D1D5DB; box-shadow: 0 10px 40px rgba(0,0,0,0.08);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.8876!2d32.571439!3d0.312153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb001812a3b1%3A0xf39eab6e59d7785f!2sKyato%20Complex!5e0!3m2!1sen!2sug!4v1712595000000!5m2!1sen!2sug"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/256703106843" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                        <img src="assets/logo.jfif" alt="Okiru Electronics Logo">
+                        OKIRU<span>ELECTRONICS</span>
+                    </a>
+                    <p>Technology Simplified. Kampala's leading specialist in laptop repair, accessories, and expert
+                        technical support.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"
+                                style="color: var(--accent-color); margin-right: 0.5rem;"></i> Shop A3 09, Kyato
+                            Complex, Kampala</li>
+                        <li><i class="fa-solid fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            +256 703 106843 / +256 775 241486</li>
+                        <li><i class="fa-solid fa-envelope"
+                                style="color: var(--accent-color); margin-right: 0.5rem;"></i> buzinessatwork@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Okiru Electronics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
